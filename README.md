@@ -5,7 +5,7 @@
 - **Full Name:** Nguyễn Nhựt Thịnh
 - **Student ID:** 26520501002
 - **Class:** 265201TH001
-- **Course:** Web Front-end Programming
+- **Course:** Lập trình web
 - **Project:** Midterm Web Project
 
 ---
