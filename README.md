@@ -243,4 +243,4 @@ Ngoài yêu cầu của đề bài, tôi đã bổ sung thêm:
 
 # Thank You
 
-Xin cảm ơn giảng viên đã dành thời gian xem và đánh giá bài làm của em.
+Xin cảm ơn giảng viên đã dành thời gian xem và đánh giá bài làm.
