@@ -1,0 +1,321 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+    padding: 12px 0;
+    transition: .3s;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    margin-left: 12px;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #ffd54f !important;
+}
+
+/* ===========================
+   CAROUSEL
+=========================== */
+
+.carousel-item img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero {
+    padding: 80px 0;
+    background: #f5f9ff;
+}
+
+.hero h1 {
+    color: #0d6efd;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.hero-image {
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+.services,
+.about {
+    padding: 80px 0;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.2);
+
+}
+
+.card-img-top {
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.card-title {
+
+    color: #0d6efd;
+
+    font-weight: bold;
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about {
+
+    background: #f8f9fa;
+
+}
+
+.about p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+
+    padding: 40px 20px;
+
+}
+
+footer p {
+
+    margin-bottom: 8px;
+
+}
+
+/* ===========================
+   MODAL
+=========================== */
+
+.modal-content{
+
+    border-radius:15px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.container{
+
+    max-width:960px;
+
+}
+
+.hero h1{
+
+    font-size:45px;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.carousel-item img{
+
+    height:50vh;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:60px 0;
+
+}
+
+.hero-image{
+
+    margin-top:40px;
+
+    max-width:380px;
+
+}
+
+.navbar-nav{
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+.nav-item{
+
+    margin:8px 0;
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.carousel-item img{
+
+    height:300px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.card{
+
+    margin-bottom:20px;
+
+}
+
+footer{
+
+    text-align:center;
+
+}
+
+}
+
+/* Small Mobile */
+
+@media (max-width:576px){
+
+.carousel-item img{
+
+    height:220px;
+
+}
+
+.hero{
+
+    padding:40px 0;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.hero .btn{
+
+    width:100%;
+
+}
+
+.card-img-top{
+
+    height:200px;
+
+}
+
+.about{
+
+    padding:60px 0;
+
+}
+
+.services{
+
+    padding:60px 0;
+
+}
+
+}

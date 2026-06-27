@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore - Cửa hàng công nghệ</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-laptop"></i>
+                TechStore
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Trang chủ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Giới thiệu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Sản phẩm</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Dịch vụ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero py-5">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h1 class="display-4 fw-bold">
+
+                        Chào mừng đến với TechStore
+
+                    </h1>
+
+                    <p class="lead my-4">
+
+                        Chuyên cung cấp Laptop, Điện thoại, Tai nghe,
+                        Chuột, Bàn phím và nhiều thiết bị công nghệ chính hãng.
+
+                    </p>
+
+                    <button
+                        id="interestBtn"
+                        class="btn btn-primary btn-lg">
+
+                        Quan tâm
+
+                    </button>
+
+                    <button
+                        class="btn btn-outline-primary btn-lg ms-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#registerModal">
+
+                        Đăng ký
+
+                    </button>
+
+                    <p class="mt-3">
+
+                        Lượt quan tâm:
+
+                        <strong id="count">
+
+                            0
+
+                        </strong>
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <img
+                        src="./images/hero.jpg"
+                        class="img-fluid hero-image"
+                        alt="Hero">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CAROUSEL ================= -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <div
+                id="bannerSlider"
+                class="carousel slide"
+                data-bs-ride="carousel">
+
+                <div class="carousel-inner rounded shadow">
+
+                    <div class="carousel-item active">
+
+                        <img
+                            src="./images/banner1.png"
+                            class="d-block w-100"
+                            alt="Banner">
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img
+                            src="./images/banner2.png"
+                            class="d-block w-100"
+                            alt="Banner">
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <img
+                            src="./images/banner3.png"
+                            class="d-block w-100"
+                            alt="Banner">
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#bannerSlider"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                </button>
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#bannerSlider"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="py-5">
+
+        <div class="container text-center">
+
+            <h2 class="mb-4">
+
+                Giới thiệu
+
+            </h2>
+
+            <p class="w-75 mx-auto">
+
+                TechStore là cửa hàng chuyên kinh doanh các sản phẩm công nghệ
+                chính hãng với giá tốt, bảo hành uy tín và hỗ trợ khách hàng
+                tận tình.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="products" class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+
+                Sản phẩm nổi bật
+
+            </h2>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card h-100 shadow">
+
+                        <img src="./images/laptop.jpg"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>Laptop</h5>
+
+                            <p>Hiệu năng mạnh mẽ cho học tập và làm việc.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card h-100 shadow">
+
+                        <img src="./images/phone.jpg"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>Điện thoại</h5>
+
+                            <p>Thiết kế hiện đại, cấu hình mạnh.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card h-100 shadow">
+
+                        <img src="./images/headphone.jpg"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>Tai nghe</h5>
+
+                            <p>Âm thanh sống động, pin lâu.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card h-100 shadow">
+
+                        <img src="./images/keyboard.jpg"
+                            class="card-img-top">
+
+                        <div class="card-body">
+
+                            <h5>Bàn phím</h5>
+
+                            <p>Bàn phím cơ chất lượng cao.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+
+                Dịch vụ
+
+            </h2>
+
+            <div class="row text-center">
+
+                <div class="col-md-4">
+
+                    <i class="bi bi-truck fs-1 text-primary"></i>
+
+                    <h4>Giao hàng nhanh</h4>
+
+                    <p>Giao hàng toàn quốc.</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <i class="bi bi-shield-check fs-1 text-primary"></i>
+
+                    <h4>Bảo hành chính hãng</h4>
+
+                    <p>Hỗ trợ đổi trả nhanh chóng.</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <i class="bi bi-headset fs-1 text-primary"></i>
+
+                    <h4>Hỗ trợ 24/7</h4>
+
+                    <p>Tư vấn nhiệt tình mọi lúc.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FAQ ================= -->
+
+    <section id="faq" class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4">
+
+                Câu hỏi thường gặp
+
+            </h2>
+
+            <div class="accordion" id="faqAccordion">
+
+                <!-- Accordion sẽ thêm ở bước CSS/JS nếu cần -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4">
+
+                Liên hệ
+
+            </h2>
+
+            <form id="contactForm" class="mx-auto" style="max-width:700px;">
+
+                <input
+                    type="text"
+                    id="name"
+                    class="form-control mb-3"
+                    placeholder="Họ và tên">
+
+                <input
+                    type="email"
+                    id="email"
+                    class="form-control mb-3"
+                    placeholder="Email">
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    class="form-control mb-3"
+                    placeholder="Nội dung"></textarea>
+
+                <button
+                    class="btn btn-primary w-100"
+                    type="submit">
+
+                    Gửi liên hệ
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <!-- Logo -->
+
+            <div class="col-lg-4">
+
+                <h3 class="footer-title">
+
+                    <i class="bi bi-laptop"></i>
+
+                    TechStore
+
+                </h3>
+
+                <p>
+
+                    TechStore là cửa hàng chuyên cung cấp Laptop,
+                    Điện thoại, Tai nghe, Chuột, Bàn phím và các thiết bị
+                    công nghệ chính hãng với giá tốt và chế độ bảo hành uy tín.
+
+                </p>
+
+            </div>
+
+            <!-- Menu -->
+
+            <div class="col-lg-4">
+
+                <h4>Liên kết nhanh</h4>
+
+                <ul class="footer-links">
+
+                    <li><a href="#home">Trang chủ</a></li>
+
+                    <li><a href="#about">Giới thiệu</a></li>
+
+                    <li><a href="#products">Sản phẩm</a></li>
+
+                    <li><a href="#services">Dịch vụ</a></li>
+
+                    <li><a href="#contact">Liên hệ</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="col-lg-4">
+
+                <h4>Thông tin liên hệ</h4>
+
+                <p>
+
+                    <i class="bi bi-geo-alt-fill"></i>
+
+                    Phường Bạc Liêu, Cà Mau
+
+                </p>
+
+                <p>
+
+                    <i class="bi bi-telephone-fill"></i>
+
+                    0123 456 789
+
+                </p>
+
+                <p>
+
+                    <i class="bi bi-envelope-fill"></i>
+
+                    nnthinh@gmail.com
+
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+
+            © 2026 Nguyễn Nhựt Thịnh
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- Back To Top -->
+
+    <button id="topBtn" class="btn btn-primary rounded-circle">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </button>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="registerModal">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5>Đăng ký nhận ưu đãi</h5>
+
+                    <button class="btn-close"
+                        data-bs-dismiss="modal"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    Nhập email của bạn để nhận các chương trình khuyến mãi mới nhất.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

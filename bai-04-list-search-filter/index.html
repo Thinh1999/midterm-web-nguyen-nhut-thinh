@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Danh Sách Sản Phẩm</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <h1>Danh Sách Sản Phẩm Công Nghệ</h1>
+
+            <p>
+                Tìm kiếm, lọc và quản lý sản phẩm bằng JavaScript
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- ================= TOOLBAR ================= -->
+
+    <section class="toolbar">
+
+        <div class="container toolbar-content">
+
+            <!-- Search -->
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Tìm theo tên sản phẩm">
+
+            <!-- Category -->
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    Tất cả danh mục
+                </option>
+
+                <option value="Laptop">
+                    Laptop
+                </option>
+
+                <option value="Điện thoại">
+                    Điện thoại
+                </option>
+
+                <option value="Phụ kiện">
+                    Phụ kiện
+                </option>
+
+            </select>
+
+            <!-- Sort -->
+
+            <select id="sortPrice">
+
+                <option value="default">
+                    Sắp xếp giá
+                </option>
+
+                <option value="asc">
+                    Giá tăng dần
+                </option>
+
+                <option value="desc">
+                    Giá giảm dần
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- ================= INFO BAR ================= -->
+
+    <section class="info-bar">
+
+        <div class="container info-content">
+
+            <div class="cart-box">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                Giỏ hàng
+
+                <span id="cartCount">
+
+                    0
+
+                </span>
+
+            </div>
+
+            <div class="favorite-box">
+
+                <i class="fa-solid fa-heart"></i>
+
+                Yêu thích
+
+                <span id="favoriteCount">
+
+                    0
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCT LIST ================= -->
+
+    <main class="container">
+
+        <section
+            id="itemList"
+            class="item-list">
+
+            <!-- JavaScript render -->
+
+        </section>
+
+        <!-- Không có dữ liệu -->
+
+        <div
+            id="noResult"
+            class="no-result">
+
+            <i class="fa-solid fa-circle-exclamation"></i>
+
+            Không tìm thấy sản phẩm phù hợp.
+
+        </div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+
+                © 2026 | Bài 04 - Danh sách sản phẩm công nghệ
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

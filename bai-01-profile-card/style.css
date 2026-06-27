@@ -1,0 +1,334 @@
+/* ===================== */
+/* Reset CSS */
+/* ===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===================== */
+/* Body */
+/* ===================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    transition: .3s;
+}
+
+/* ===================== */
+/* Card */
+/* ===================== */
+
+.profile-card {
+
+    width: 380px;
+
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+
+    animation: fadeIn .8s ease;
+
+    transition: .3s;
+}
+
+/* Hover Card */
+
+.profile-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .25);
+
+}
+
+/* ===================== */
+/* Avatar */
+/* ===================== */
+
+.avatar {
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid #4CAF50;
+
+    margin-bottom: 20px;
+}
+
+/* ===================== */
+/* Text */
+/* ===================== */
+
+.job-title {
+
+    color: #666;
+
+    margin: 10px 0;
+
+}
+
+.description {
+
+    margin: 20px 0;
+
+    line-height: 1.6;
+
+}
+
+/* ===================== */
+/* Skill */
+/* ===================== */
+
+.skill-list {
+
+    list-style: none;
+
+    margin: 20px 0;
+
+}
+
+.skill-list li {
+
+    display: inline-block;
+
+    background: #4CAF50;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    margin: 5px;
+
+    border-radius: 20px;
+
+}
+
+/* ===================== */
+/* Social */
+/* ===================== */
+
+.social-links {
+
+    margin: 20px 0;
+
+}
+
+.social-links a {
+
+    text-decoration: none;
+
+    color: #4CAF50;
+
+    margin: 0 10px;
+
+    font-weight: bold;
+
+}
+
+.social-links a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* ===================== */
+/* Buttons */
+/* ===================== */
+
+.button-group {
+
+    margin-top: 20px;
+
+}
+
+button {
+
+    padding: 10px 18px;
+
+    margin: 5px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #4CAF50;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+button:hover {
+
+    background: #3d8b40;
+
+}
+
+/* ===================== */
+/* Animation */
+/* ===================== */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ===================== */
+/* Dark Mode */
+/* ===================== */
+
+.dark-mode {
+
+    background: #222;
+
+    color: white;
+
+}
+
+.dark-mode .profile-card {
+
+    background: #333;
+
+}
+
+.dark-mode .job-title {
+
+    color: #ddd;
+
+}
+
+.dark-mode .description {
+
+    color: #eee;
+
+}
+
+.dark-mode .social-links a {
+
+    color: #7dd3fc;
+
+}
+
+.dark-mode .skill-list li {
+
+    background: #555;
+
+}
+
+.dark-mode button {
+
+    background: #666;
+
+}
+
+.dark-mode button:hover {
+
+    background: #888;
+
+}
+
+/* ===================== */
+/* Responsive */
+/* ===================== */
+
+@media (max-width:768px) {
+
+    .profile-card {
+
+        width: 90%;
+
+        padding: 25px;
+
+    }
+
+}
+
+@media (max-width:480px) {
+
+    body {
+
+        padding: 20px;
+
+    }
+
+    .profile-card {
+
+        width: 100%;
+
+        padding: 20px;
+
+    }
+
+    .avatar {
+
+        width: 120px;
+        height: 120px;
+
+    }
+
+    .skill-list li {
+
+        display: block;
+
+        width: 70%;
+
+        margin: 10px auto;
+
+    }
+
+    .social-links {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+    button {
+
+        width: 100%;
+
+    }
+
+}

@@ -1,0 +1,760 @@
+/* ====================================
+   RESET
+==================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ====================================
+   NAVBAR
+==================================== */
+
+.navbar {
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd54f !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ====================================
+   HERO
+==================================== */
+
+.hero {
+    padding: 80px 0;
+    background: linear-gradient(to right, #f8fbff, #eef5ff);
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 12px 28px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    animation: floatImage 3s ease-in-out infinite;
+}
+
+/* Animation ảnh */
+
+@keyframes floatImage {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+/* ====================================
+   CAROUSEL
+==================================== */
+
+.carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 70%;
+}
+
+/* ====================================
+   ABOUT
+==================================== */
+
+#about {
+    padding: 80px 0;
+}
+
+#about h2 {
+    font-size: 38px;
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+}
+
+/* ====================================
+   SECTION TITLE
+==================================== */
+
+section h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 4px;
+    background: #0d6efd;
+    border-radius: 10px;
+}
+
+/* ====================================
+   RESPONSIVE (PHẦN 1)
+==================================== */
+
+@media (max-width: 992px) {
+
+    .hero {
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+        max-width: 400px;
+    }
+
+    .carousel-item img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 8px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    #about h2 {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-image {
+        max-width: 300px;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+}
+
+/* ====================================
+   PRODUCTS
+==================================== */
+
+#products {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+#products h2 {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(13,110,253,.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #fff;
+    padding: 20px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title,
+.card h5 {
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card-text,
+.card p {
+    color: #666;
+}
+
+/* ====================================
+   SERVICES
+==================================== */
+
+#services {
+    padding: 80px 0;
+}
+
+#services h2 {
+    text-align: center;
+}
+
+#services .col-md-4 {
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+#services .col-md-4:hover {
+    transform: translateY(-8px);
+}
+
+#services i {
+    font-size: 55px;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+#services h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#services p {
+    color: #666;
+}
+
+/* ====================================
+   FAQ
+==================================== */
+
+#faq {
+    padding: 80px 0;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #0d6efd;
+    color: white;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ====================================
+   CONTACT
+==================================== */
+
+#contact {
+    padding: 80px 0;
+}
+
+#contact form {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+textarea {
+    resize: none;
+}
+
+#contact button {
+    padding: 12px;
+    font-size: 17px;
+}
+
+/* ====================================
+   FOOTER
+==================================== */
+
+footer {
+    padding: 25px 0;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* ====================================
+   BACK TO TOP
+==================================== */
+
+#topBtn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    z-index: 999;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+/* ====================================
+   BUTTON HOVER
+==================================== */
+
+.btn {
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ====================================
+   FADE ANIMATION
+==================================== */
+
+.hero,
+#about,
+#products,
+#services,
+#faq,
+#contact {
+
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ====================================
+   DARK MODE
+==================================== */
+
+body.dark-mode {
+    background: #1f1f1f;
+    color: white;
+}
+
+body.dark-mode .hero {
+    background: #2a2a2a;
+}
+
+body.dark-mode #products {
+    background: #252525;
+}
+
+body.dark-mode #faq {
+    background: #252525;
+}
+
+body.dark-mode .card,
+body.dark-mode form,
+body.dark-mode .accordion-item {
+    background: #333;
+    color: white;
+}
+
+body.dark-mode .card p,
+body.dark-mode #about p,
+body.dark-mode #services p {
+    color: #ddd;
+}
+
+body.dark-mode .form-control {
+    background: #444;
+    color: white;
+    border-color: #666;
+}
+
+body.dark-mode .accordion-button {
+    background: #444;
+    color: white;
+}
+
+body.dark-mode footer {
+    background: #111 !important;
+}
+
+/* ====================================
+   RESPONSIVE
+==================================== */
+
+@media (max-width:992px){
+
+.card-img-top{
+
+height:180px;
+
+}
+
+#contact form{
+
+padding:25px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+section{
+
+padding:60px 0 !important;
+
+}
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+#services .col-md-4{
+
+margin-bottom:35px;
+
+}
+
+#contact form{
+
+padding:20px;
+
+}
+
+#topBtn{
+
+width:45px;
+height:45px;
+
+right:15px;
+bottom:15px;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.card-img-top{
+
+height:160px;
+
+}
+
+footer{
+
+font-size:14px;
+
+}
+
+#contact button{
+
+font-size:15px;
+
+}
+
+}
+
+/* ==========================
+        FOOTER
+========================== */
+
+.footer{
+
+    background:#0d6efd;
+
+    color:white;
+
+    padding:60px 0 25px;
+
+    margin-top:60px;
+
+}
+
+.footer-title{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+}
+
+.footer h4{
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+}
+
+.footer p{
+
+    color:#f1f1f1;
+
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#ffd54f;
+
+    padding-left:6px;
+
+}
+
+.social-icons{
+
+    margin-top:20px;
+
+}
+
+.social-icons a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:42px;
+
+    height:42px;
+
+    background:white;
+
+    color:#0d6efd;
+
+    border-radius:50%;
+
+    margin-right:10px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    background:#ffd54f;
+
+    color:#000;
+
+    transform:translateY(-5px);
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.25);
+
+    margin:35px 0 20px;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+/* ==========================
+    FOOTER MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer-links{
+
+margin-top:20px;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+}
